@@ -10,7 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    background-image: url('https://ae01.alicdn.com/kf/HTB1txk9JpXXXXaUXFXXq6xXFXXXG/Photography-Background-Under-the-Sea-World-Personalized-Vinyl-Backdrops-for-Photography-Custom-Photo-Studio-Props-Fotografia.jpg_640x640.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .clock {
@@ -26,13 +28,65 @@ body {
     	display: flex;
     	align-items: center;
 	    position: relative;
-	    /* account for the height of the clock hands */
+	    span {
+	    	position: absolute;
+	    	font-size: 6vh;
+	    }
+	    .one {
+	    	left: 70%;
+	    	top: 6%;
+	    }
+	    .two {
+	    	left: 87%;
+	    	top: 23%;
+	    }
+	    .three {
+	    	left: 90%;
+	    	top: 45%;
+	    }
+	    .four {
+	    	left: 87%;
+	    	top: 68%;
+	    }
+	    .five {
+	    	left: 70%;
+	    	top: 85%;
+	    }
+	    .six {
+	    	left: 48%;
+	    	top: 91%;
+	    }
+	    .seven {
+	    	right: 70%;
+	    	top: 85%;
+	    }
+	    .eight {
+	    	right: 87%;
+	    	top: 68%;
+	    }
+	    .nine {
+	    	right: 90%;
+	    	top: 45%;
+	    }
+	    .ten {
+	    	right: 82%;
+	    	top: 23%;
+	    }
+	    .eleven {
+	    	right: 68%;
+	    	top: 6%;
+	    }
+	    .twelve {
+	    	left: 45%;
+	    	top: -1%;
+	    }
 	    .hand {
 	    	height: 2%;
 		    width: 50%;
 		    background-color: #000;
 		    position: absolute;
 		    transform-origin: 100%;
+		    transform: rotate(90deg);
 		}
 	}
 }
