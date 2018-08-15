@@ -1,23 +1,30 @@
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	min-height: 100vh;
+	height: 100vh;
 	width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-image: url('https://ae01.alicdn.com/kf/HTB1txk9JpXXXXaUXFXXq6xXFXXXG/Photography-Background-Under-the-Sea-World-Personalized-Vinyl-Backdrops-for-Photography-Custom-Photo-Studio-Props-Fotografia.jpg_640x640.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .clock {
-	height: 80vh;
-    width: 40vw;
+	height: 80%;
+    width: 40%;
     padding: 3vh 2vw;
     position: relative;
     border: 3.5vh solid #fff;
@@ -25,8 +32,12 @@ body {
     &__face {
     	height: 100%;
     	width: 100%;
+    	display: -webkit-box;
+    	display: -ms-flexbox;
     	display: flex;
-    	align-items: center;
+    	-webkit-box-align: center;
+    	    -ms-flex-align: center;
+    	        align-items: center;
 	    position: relative;
 	    span {
 	    	position: absolute;
@@ -85,8 +96,18 @@ body {
 		    width: 50%;
 		    background-color: #000;
 		    position: absolute;
-		    transform-origin: 100%;
-		    transform: rotate(90deg);
+		    -webkit-transform-origin: 100%;
+		        -ms-transform-origin: 100%;
+		            transform-origin: 100%;
+		    -webkit-transform: rotate(90deg);
+		        -ms-transform: rotate(90deg);
+		            transform: rotate(90deg);
+		}
+		.hand-hour {
+			padding: 1vh;
+		}
+		.hand-sec {
+			height: 1%;
 		}
 	}
 }
